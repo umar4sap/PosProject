@@ -1,0 +1,41 @@
+header {
+  background-color: #ff9900;
+  height: 50px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer {
+  background-color: #ff9900;
+  height: 50px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: absolute;
+  top: 100%;
+}
+#login-box {
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  outline: 1px solid grey;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  background: #ff9900;
+}
+#login-box .login-tmpl {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 0px !important;
+}
+#login-box .login-tmpl .heading {
+  background-color: #d4d7fe;
+  border-radius: 5px 5px 0px 0px;
+}
+#login-box .login-tmpl .heading h5 {
+  color: #000000;
+}
+#login-box .login-tmpl .input-name #username {
+  width: 300px;
+}
