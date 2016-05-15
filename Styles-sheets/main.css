@@ -1,2 +1,72 @@
-@import "desktop.css";
-@import "mobile.css";
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #ff9900;
+  height: 50px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer {
+  background-color: #ff9900;
+  height: 50px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: absolute;
+  top: 100%;
+}
+#login-box {
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  outline: 1px solid grey;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+#login-box .login-tmpl {
+  border-radius: 5px;
+  background-color: #ffffff !important;
+  padding: 0px !important;
+  height: 220px;
+  width: 350px;
+  border: 1px solid black;
+}
+#login-box .login-tmpl .heading {
+  background-color: #d4d7fe;
+  border-radius: 5px 5px 0px 0px;
+}
+#login-box .login-tmpl .heading h5 {
+  color: #000000;
+}
+#login-box .login-tmpl .input-name {
+  margin-top: 30px;
+  display: table;
+}
+#login-box .login-tmpl .input-name i {
+  width: 25px;
+  background-color: #ffffff;
+  height: 20px;
+  display: inline;
+  padding: 5px;
+  outline: 1px solid grey;
+}
+#login-box .login-tmpl .input-name #username {
+  width: 269px;
+  height: 26px;
+  background-color: #ffffff;
+  display: inline;
+}
+#login-box .login-tmpl .input-name #password {
+  width: 277px;
+  height: 26px;
+  background-color: #ffffff;
+  display: inline;
+}
+#login-box .login-tmpl .button-login button {
+  margin-top: 15px;
+  height: 25px;
+  line-height: 1em;
+}
