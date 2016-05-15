@@ -1,4 +1,4 @@
-<div id="login-box">
+<form id="login-box" ng-controller="loginController" name="myForm">
     
         <div class="login-tmpl">
             <div class="col-md-12 heading">
@@ -6,15 +6,15 @@
             </div>
             <div class="col-md-12 input-name">
                 <i class="fa fa-user" aria-hidden="true" >
-                </i><input type="text" placeholder="Username" id="username" />
-                
+                </i><input type="text" placeholder="Username" id="username" ng-model="userName" required/><span ng-show="myForm.userName.$touched && myForm.userName.$invalid">user is required.</span>
+            
                 
             
             </div>
             
             <div class="col-md-12 input-name">
                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                <input type="password" placeholder="password" id="password" />
+                <input type="password" placeholder="password" id="password" ng-model="passCode" />
                 
                 
             
@@ -32,4 +32,4 @@
     
      
      
-    </div>
+    </form>

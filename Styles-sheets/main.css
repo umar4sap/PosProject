@@ -8,6 +8,9 @@ header {
   padding-left: 10%;
   padding-right: 10%;
 }
+header a {
+  margin: 10px;
+}
 footer {
   background-color: #ff9900;
   height: 50px;

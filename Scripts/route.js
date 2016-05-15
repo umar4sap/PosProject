@@ -4,39 +4,46 @@
     var appRoute = angular.module('posapp');
 
     // Collect the routes
-   
+   debugger;
     appRoute.constant('routes', getRoutes());
-    getRoutes();
+    
     // Configure the routes and route resolvers
-    appRoute.config(['$routeProvider', 'routes', routeConfigurator]);
-    function routeConfigurator($routeProvider, routes) {
+    appRoute.config(['$routeProvider', '$locationProvider','routes', routeConfigurator]);
+    function routeConfigurator($routeProvider,$locationProvider, routes) {
 
         routes.forEach(function (r) {
             $routeProvider.when(r.url, r.config);
         });       
         $routeProvider.otherwise({ redirectTo: '/error', templateUrl: 'app/error/error.html' });
-
+ /* $locationProvider.html5Mode({
+  enabled: true,
+  requireBase: false
+});*/
     }
 
     // Define the routes 
     function getRoutes() {
+        
         return [
             {
-                url: '/',
+                url:'/',
                 config: {
-                    title: 'Login',
-                    templateUrl: '../templates/login-tmpl.html'
+                    
+                    templateURL: 'index.html',
+                    controller:'home'
+                   
                 }
             },
             {
-                url: '/topic',
+                url: '/login',
                 config: {
                     title: 'topic',
-                    templateUrl: '/app/topic/topic.html'
+                    templateUrl: 'templates/login-tmpl.html',
+                     controller: 'loginController'
                 }
             },
             {
-                url: '/log',
+                url: '/log2',
                 config: {
                     title: 'start',
                     templateUrl: '../views/start.html'

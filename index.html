@@ -1,54 +1,31 @@
-<html >
+<html ng-app="posapp" >
    <head>
  <link href="Libraries/bootstrap.css" rel="stylesheet" />  
         <link href="Libraries/font-awesome.css" rel="stylesheet" /> 
         <link href="Styles-sheets/main.css" rel="stylesheet" />
-       
-    </head>
-     
-    
-    
- <header></header>
-     
-     <body ng-app="posapp">
-         
-         
-         
-         
-        
        <script src="Libraries/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="Libraries/angular.min.js" type="text/javascript"></script>
          <script src="Libraries/angular-route.js" type="text/javascript"></script>
          <script src="Scripts/common.js" type="text/javascript"></script>
        <script src="Scripts/app.js" type="text/javascript"></script>  
-           <script src="Scripts/route.js" type="text/javascript"></script>  
-         
-         
-         
-         
-         
-         
+           <script src="Scripts/route.js" type="text/javascript"></script>
+         <script src="Scripts/controllers.js" type="text/javascript"></script>  
+       
+    </head>
+    <header>
+        <a href="#/login" class="btn btn-warning pull-right">Login To Pos</a>
+    
+    
+    </header>
+    
+    <body>
+  
+      <div ng-view ></div>
+   
     </body>
     
     
         
-    
-    
-     
-     
-    
-    
-    
-    
-    
-    
-  <footer></footer> 
-     
-    
-     
-     
-     
-    
     
     
 </html>
